@@ -1,4 +1,3 @@
-import './App.scss';
 import {
   BrowserRouter as Router,
 } from "react-router-dom";
@@ -8,8 +7,8 @@ import history from "./history";
 function App() {
   return (
     <Router history={history}>
-          <Routers history={history}/>
-      </Router>
+      <Routers history={history} />
+    </Router>
   );
 }
 

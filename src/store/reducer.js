@@ -1,22 +1,21 @@
-// import { REHYDRATE } from 'redux-persist';
+import { REHYDRATE } from 'redux-persist';
 
 
 var initState = {
-    filter:[]
+    YourState:[]
 };
 
-function CMSReducer(state = initState, action) {
+function Reducer(state = initState, action) {
     switch (action.type) {
         case 'CASE':
-            debugger
             return {
                 ...state,
-                filters: action.payload,
+                YourState: action.payload,
             };
-        // case REHYDRATE:
-        //     return {
-        //         ...state,
-        //     };
+        case REHYDRATE:
+            return {
+                ...state,
+            };
         default:
             return {
                 ...state,
@@ -24,4 +23,4 @@ function CMSReducer(state = initState, action) {
     }
 }
 
-export const reducer = CMSReducer;
+export const reducer = Reducer;

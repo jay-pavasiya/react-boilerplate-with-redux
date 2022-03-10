@@ -1,0 +1,44 @@
+body{
+    background-color: #282c34;
+   
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    text-align: center;
+    color: #61dafb;
+    font-size: 100px;
+    margin: 10px auto;
+}
+.logo{
+    width: 600px;
+    height: 100%;
+}
+h3{
+    color: white;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+    .logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  span{
+      color: white;
+  }
